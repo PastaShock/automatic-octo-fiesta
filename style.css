@@ -1,124 +1,150 @@
 body {
-	font-family: Arial, Helvetica, sans-serif;
-text-align: center;
-align-content: center;
-margin: auto;
-padding: 50px;
-border-radius: 25px;
-background-color: mistyrose;
+	font-family: monospace;
 }
 header {
-	position: fixed;
+	position: relative;
+	margin: auto;
+	padding-bottom: 25px;
 	background-color: aquamarine;
+	width: 100%;
+	height: 50px;
 }
 section {
-margin: 25px;
-box-shadow: 0px 5px 5px rgba(0,0,0, .7);
-}
-#contact {
-background-color:lavender;
-color: rebeccapurple;
-text-align: left;
-margin: 0 auto;
-padding-top: 15px;
-padding-bottom: 30px;
-border-radius: 15px;
-}
-#contact a:link {
-color: inherit;
-font-style: normal;
-text-decoration: inherit;
+	margin: 25px;
+	box-shadow: 0px 5px 5px rgba(0,0,0, .7);
+	border-radius: 25px;
 }
 h1 {
-font-size: xxxx-large;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-color: lightcoral;
-margin: 0 auto;
-padding-bottom: 25px;
+	font-size: xxxx-large;
+	color: lightcoral;
+	float: left;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-left: 25px;
+	text-align: left;
 }
 h2 {
-font-family:cursive;
-font-size: x-large;
-color: rgb(13, 53, 13);
-padding-top: 10px;
-margin: 0 auto;
+	/*font-family:cursive;*/
+	font-size: x-large;
+	color: rgb(13, 53, 13);
+	padding-top: 10px;
+	margin: 0 auto;
 }
 h3 {
-text-align: center;
+	text-align: center;
 }
 ul {
-list-style-type: none;
-text-align: left;
-display: table;
-width: 350px;
-margin: 0 auto;
+	list-style-type: none;
+	text-align: left;
+	display: table;
+	width: 350px;
+	margin: 0 auto;
 }
 p {
-font-family: monospace;
-text-align: left;
-padding-left: 10%;
-padding-right: 10%
+	/*font-family: monospace;*/
+	text-align: left;
+	padding-left: 10%;
+	padding-right: 10%
 }
 a {
-text-align: right;
+	text-align: right;
+}
+#nav {
+	margin: 0;
+	position: relative;
+	float:right;
+	width: auto;
 }
 #bio {
-background-color: darkolivegreen;
-padding: 25px;
-border-radius: 25px;
+	background-color: darkolivegreen;
+	padding: 25px;
 }
 #portrait {
-object-fit: cover;
-width: 200px;
-height: 200px;
-border-radius: 0px;
-margin: auto;
-/* box-shadow: inherit; */
+	object-fit: cover;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	/* box-shadow: inherit; */
 }
 #letter {
-width: inherit;
-margin: 25px auto;
-padding: 25px;
-padding-top: 50px;
-background-color: lemonchiffon;
-border-radius: 15px;
-color:darkolivegreen;
-/* box-shadow: inherit; */
+	width: inherit;
+	margin: 25px auto;
+	padding: 25px;
+	padding-top: 50px;
+	background-color: lemonchiffon;
+	color:darkolivegreen;
+	border-radius: 25px;
 }
-/* .drop-shadow {
-float:inline-end;
-position:fixed;
-margin: 0 0 1 1;
-background-color: black;
-opacity: 75%;
-offset: 0 15 15 0;
-} */
+#contact {
+	float:left;
+	background-color:lavender;
+	color: rebeccapurple;
+	text-align: left;
+	margin: 0 auto;
+	padding-top: 15px;
+	padding: 25px;
+	margin: 25px;
+}
+#contact a:link {
+	color: inherit;
+	font-style: normal;
+	text-decoration: inherit;
+}
+#sign-up {
+	display: grid;
+	grid-template-columns: 4;
+	grid-template-rows: 4;
+	margin: 25px;
+	background-color:lavender;
+	color: rebeccapurple;
+	text-align: left;
+	padding: 25px;}
+#sign-up h3 {
+	grid-column: span 2;
+}
+#sign-up p {
+	text-align: center;
+}
+#copyright {
+	position: relative;
+	padding: auto;
+	margin: 0 auto;
+	margin-top: 50px;
+}
 .tab {
-display: inline-block;
-margin-left: 25px;
+	display: inline-block;
+	margin-left: 25px;
 }
 .polaroid-body {
-transform: rotate(0.01turn);
-margin: 0 auto;
-display: -webkit-flex;
-background-color: white;
-width: 240px;
-height: 240px;
-box-shadow: inherit;
+	transform: rotate(0.01turn);
+	margin: 0 auto;
+	display: -webkit-flex;
+	background-color: white;
+	width: 240px;
+	height: 240px;
+	box-shadow: inherit;
 }
 .polaroid-frame {
-display: inherit;
-background-color: inherit;
-width: 90%;
-height: 90%;
-margin: 0 auto;
+	display: inherit;
+	background-color: inherit;
+	width: 90%;
+	height: 90%;
+	margin: 0 auto;
 }
 .polaroid-dev-pack {
-margin: 170px auto;
-padding: 0;
-background-color: inherit;
-width: inherit;
-width: 220px;
-height: 70px;
-position: absolute;
+	margin: 170px auto;
+	padding: 0;
+	background-color: inherit;
+	width: inherit;
+	width: 220px;
+	height: 70px;
+	position: absolute;
+}
+.text-input-narrow {
+	grid-column: auto;
+	margin: 0 auto;
+}
+.text-input-wide {
+	grid-column: span 2;
+	margin: 0 auto;
 }

@@ -6,15 +6,22 @@
     <title>Student Bio</title>
     <link rel="stylesheet" href="style.css">
   </head>
-
+  
   <body>
-    <header>
-      <h1>Student Bio</h1>
-      <a href="#contact">Contact</a>
-      <a href="https://www.github.com/PastaShock">Github</a>
-      <a href="http://twitter.com/PastaShock">Twitter</a>
-    </header>
-
+  <header>
+    <h1>Student Bio</h1>
+    <ul id="nav">
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+      <li>
+        <a href="https://www.github.com/PastaShock">Github</a>
+      </li>
+      <li>
+        <a href="http://twitter.com/PastaShock">Twitter</a>
+      </li>
+    </ul> 
+  </header>
     <section id="bio">
 
       <div class="polaroid-body">
@@ -56,6 +63,32 @@
           <a href="#">Coming soon!</a>
         </li>
       </ul>
+
     </section>
+    <section id="sign-up">
+      <h3>
+        sign-up for updates:
+      </h3>
+      <form>
+        <div class="text-input-narrow">
+          <p>First Name</p>
+          <input type="text" name="first" id="first" class="text-box" tabindex="97">
+        </div>
+        <div class="text-input-narrow">
+          <p>Last Name</p>
+          <input type="text" name="last" id="last" class="text-box" tabindex="98">
+        </div>
+        <div class="text-input-wide">
+          <p>Email</p>
+          <input type="email" name="email" id="email" class="text-box" tabindex="99">
+        </div>
+        <button id="sign-up-submit" class="text-input-wide" onclick="">Send it!</button>
+      </form>
+    </section>
+<footer>
+  <div id="copyright">
+    <small> &copy; copyright 2021, George Pastushok</small>
+  </div>
+</footer>
   </body>
 </html>
